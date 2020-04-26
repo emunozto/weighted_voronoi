@@ -4,7 +4,7 @@ A Voronoi diagram allows us to partition the pitch space by assigning every cell
 
 The weighted Voronoi is a variation of the Voronoi where a weighting function `w` is added to control the relative level of influence that a player has over a cell. Each cell on the grid can be expressed as
 
-![](equation.png)
+![](equation.png){width=50%}
 
 where a typical weight function would be ![](w.png), ![](beta.png) could be a constant, the parameter controlling the distance to any location.
 
