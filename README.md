@@ -2,7 +2,7 @@
 A Voronoi diagram allows us to partition the pitch space by assigning every cell to the closest player, these regions are called dominace regions. 
 
 
-The weighted Voronoi is a variation of the Voronoi where a weighting function $w$ is added to control the relative level of influence that a player has over a cell. Each cell on the grid can be expressed as
+The weighted Voronoi is a variation of the Voronoi where a weighting function `w` is added to control the relative level of influence that a player has over a cell. Each cell on the grid can be expressed as
 
 ![](equation.png)
 
