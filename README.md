@@ -1,17 +1,13 @@
 # Weighted Voronoi for Soccer
-A Voronoi diagram allows us to partition the pitch space by assigning every cell to the closest player, these regions are called dominace regions. 
+A Voronoi diagram is a geometric construction that allows to partition the soccer pitch in regions, these regions are called dominance regions.
+A Voronoi diagram creates cells delimited by a polygon, it uses the distance to assign a dominion region to the nearest player.
 
-
-The weighted Voronoi is a variation of the Voronoi where a weighting function `w` is added to control the relative level of influence that a player has over a cell. Each cell on the grid can be expressed as
-
+The weighted Voronoi diagram is a variation of the classic diagram, in this approximation a weight function ,$w$, is added, this function allows to control the level of influence that a player can exert over a cell. Each cell can be estimated as
 ![](equation.png)
+A typical weight function could be ![](w.png), where d is the distance from player $i$ to a location in the pitch $m$ and ![](beta.png) can be a constant.
 
-where a typical weight function would be ![](w.png), ![](beta.png) could be a constant, the parameter controlling the distance to any location.
-
-The Voronoi accounts for the space owned by each team considering only distance, while the weighted Voronoi can be modified to account for other parameters such as time.
-Notice that Voronoi diagrams do not account for player velocity but they are apropiate if one wants to find the space dominated by a player.
+The Voronoi estimates the space dominated by each team considering only the Euclidean distance, while the weighted Voronoi can be modified to account for other parameters that can be time dependants.
 
 ## Source Code
 * `voronoi_weighted.py`: This script contains visualization and calculation functions for weighted Voronoi.
 * `tutorial_voronoi_weighted.ipynb`: This notebook shows how to use the `voronoi_weighted.py`.
-
