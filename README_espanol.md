@@ -12,4 +12,4 @@ El Voronoi estima el espacio dominado por cada equipo considerando únicamente l
 
 Código Fuente
 * `voronoi_weighted.py`: Este script contiene la visualización y las funciones de cálculos del Vorionoi ponderado.
-* `tutorial_voronoi_ponderado_espanol.ipynb`: Este notebook muestra como utilizar el `voronoi_weighted.py`.
+* `tutorial_voronoi_ponderado.ipynb`: Este notebook muestra como utilizar el `voronoi_weighted.py`.
