@@ -12,7 +12,7 @@ def plot_pitch(lc = 'black', lw = 2, xPitchSize = 100, yPitchSize = 60, scale = 
     assert yPitchSize >= 45 and yPitchSize <= 90, 'The goal line must be between 90 and 120 metres'
     assert xPitchSize > yPitchSize, ' The touch line must be greater than the goal line'
     
-    u  = 1 # metres, u = 
+    u  = 1 # metres
     xi = 0  # origin
     yi = 0  # origin
     X  = xPitchSize/2             # half x Pitch Length #m
@@ -112,8 +112,8 @@ def weighted_voronoi(home_data, away_data, xPitchSize=100,yPitchSize=60, resolut
     """
     This function calculates the weighted Voronoi
     """
-    x = np.linspace(0,xPitchSize,500) 
-    y = np.linspace(0,yPitchSize,500)
+    x = np.linspace(0,xPitchSize,resolution) 
+    y = np.linspace(0,yPitchSize,resolution)
     X,Y = np.meshgrid(x,y)
     h_xy = []
     a_xy = []
